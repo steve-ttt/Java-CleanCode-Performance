@@ -54,7 +54,7 @@ public class App {
         System.out.println("Shape test Data Driven style");
         System.out.println("Time: " + (ddEnd - ddStart) + "ns. Result: " + ddResult);
         System.out.println("-------------------------------------------");
-        System.out.printf("Difference is %d %% faster\n", (end - start) / (ddEnd - ddStart) * 100 );
+        System.out.printf("Difference is %.2f %% faster\n", (float)(end - start) / (ddEnd - ddStart) * 100 );
     }
     
     public static double runBenchmark(Shape[] shapes) {
